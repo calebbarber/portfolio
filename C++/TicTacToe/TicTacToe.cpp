@@ -95,6 +95,7 @@ void single() {
         board();
 		
 		if (i == 1 && player == 2) cpu = 2;
+		if (i == 1) return;
 		
 		player++;
     }
@@ -136,6 +137,8 @@ void mult() {
 
         i = win();
         board();
+		
+		if (i == 1) return;
 		player++;
     }
 	
