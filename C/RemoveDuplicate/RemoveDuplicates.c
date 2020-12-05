@@ -19,17 +19,16 @@ int removeDuplicates(int* arr, int n) {
 }
 
 int main() {
-	int size = 14;
-	int arr[size] = {1, 1, 2, 3, 4, 5, 6, 6, 6, 7, 8, 9, 9};
+	int arr[13] = {1, 1, 2, 3, 4, 5, 6, 6, 6, 7, 8, 9, 9};
 	
 	printf("Original Array: [");
-	for (int i = 0; i < size; i++) {
-		if (i == size-1) printf("%d]", arr[i]);
+	for (int i = 0; i < 13; i++) {
+		if (i == 12) printf("%d]", arr[i]);
 		else printf("%d, ", arr[i]);
 	}
 	printf("\n");
 	
-	int n = removeDuplicates(arr, size);
+	int n = removeDuplicates(arr, 13);
 	
 	printf("Modified Array: [");
 	for (int i = 0; i < n; i++) {
